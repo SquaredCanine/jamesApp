@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_cocktail_info"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.martijn.myapplication.src.CocktailInfo_Activity">
+
+
+    <Button
+        android:text="ORDER"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_corner"
+        android:id="@+id/OrderButton"
+        android:layout_above="@+id/EditCocktailButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="Cocktail Name"
+        android:textSize="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/CocktailName"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="Cola"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/CocktailName"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="51dp"
+        android:layout_marginStart="51dp"
+        android:layout_marginTop="25dp"
+        android:id="@+id/drinkOne" />
+
+    <TextView
+        android:text="Wodka"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/drinkOne"
+        android:layout_alignLeft="@+id/drinkOne"
+        android:layout_alignStart="@+id/drinkOne"
+        android:layout_marginTop="25dp"
+        android:id="@+id/drinkTwo" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="edit"
+        android:background="@drawable/edit_rounded"
+        android:id="@+id/EditCocktailButton"
+        android:layout_alignTop="@+id/RemoveCocktailButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/RemoveCocktailButton"
+        android:layout_toStartOf="@+id/RemoveCocktailButton" />
+
+    <Button
+        android:text="REMOVE"
+        android:layout_width="180dp"
+        android:layout_height="47dp"
+        android:id="@+id/RemoveCocktailButton"
+        android:background="@drawable/discard_rounded"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="Bacardi"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:id="@+id/drinkThree"
+        android:layout_below="@+id/drinkTwo"
+        android:layout_alignLeft="@+id/drinkTwo"
+        android:layout_alignStart="@+id/drinkTwo" />
+
+
+</RelativeLayout>
